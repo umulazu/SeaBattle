@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+        <script src="excanvas.js"></script>
+    <![endif]-->
+    <title>Морской бой</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/game.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Морской бой</h1>
+    </div>
+
+    <fieldset class="menu" id="mainMenu">
+        <legend>Введите свое имя</legend>
+        <label for="playerName">Имя</label>
+        <input type="text" id="playerName" value="Игрок 1">
+        <p>
+            <button id="startButton" onclick="initGame(document.getElementById('playerName').value)">Начать игру</button>
+        </p>
+
+    </fieldset>
+
+</body>
+</html>
